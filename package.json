@@ -43,7 +43,8 @@
     "@openzeppelin/contracts": "^3.3.0",
     "@typechain/hardhat": "^1.0.1",
     "ganache-core": "^2.12.1",
-    "glob": "^7.1.6"
+    "glob": "^7.1.6",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "@eth-optimism/plugins": "^0.0.17",

@@ -5,6 +5,19 @@ const { providers, Wallet, utils, ethers } = require('ethers');
 const { LedgerSigner } = require('@ethersproject/hardware-wallets');
 const { JsonRpcProvider } = providers;
 
+
+//------------Begin New Added Code-------------------//
+const path = require('path');
+const dotenv = require('dotenv');
+
+// Load up env variables if running locally
+if (process.env.NODE_ENV === 'local') {
+  const envPath = path.join(__dirname, '/.env');
+  dotenv.config({ path: envPath })
+}
+//-------------End New Added Code--------------------//
+
+
 const env = process.env;
 const key = env.DEPLOYER_PRIVATE_KEY;
 const sequencerKey = env.SEQUENCER_PRIVATE_KEY;

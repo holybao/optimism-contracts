@@ -11,6 +11,24 @@ A more detailed overview of these contracts can be found on the [community hub](
 
 <!-- TODO: Add link to final contract docs here when finished. -->
 
+## Deploy custom Optimism rollup instructions
+
+Use Kovan as Layer1 Blockchain:
+
+```javascript
+git clone git clone https://github.com/holybao/optimism-contracts.git 
+yarn add --dev hardhat
+yarn
+yarn build:kovan
+NODE_ENV=local yarn deploy
+```
+
+Building 
+
+
+
+
+
 ## Usage (npm)
 If your development stack is based on Node/npm:
 
