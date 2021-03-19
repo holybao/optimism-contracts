@@ -21,12 +21,10 @@ yarn add --dev hardhat
 yarn
 yarn build:kovan
 NODE_ENV=local yarn deploy
+
+cd misc
+docker-compose up
 ```
-
-Building 
-
-
-
 
 
 ## Usage (npm)
